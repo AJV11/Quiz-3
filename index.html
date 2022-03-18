@@ -20,21 +20,19 @@
         	arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
         	renderer="antialias: true; alpha: true">
 		
-		<!-- we dont have camera, assets, items, etc. in here yet -->
-
 		<a-assets>
 			<a-asset-item id="sword" src="Sword.gltf">
-<!-- 			<a-asset-item id="sword2" src="Sword.gltf">
+			<a-asset-item id="sword2" src="Sword.gltf">
 			<a-asset-item id="sword3" src="Sword.gltf">
-			<a-asset-item id="sword4" src="Sword.gltf"> -->
+			<a-asset-item id="sword4" src="Sword.gltf">
 		</a-assets>
 
 		<a-entity gltf-model="#sword" 
-				  rotation="0 180 0" scale="0.15 0.15 0.15" rotation="0 180 0"
+				  position="0 180 0" scale="0.15 0.15 0.15" rotation="0 180 0"
 				  gps-entity-place="longitude: -79.61120; latitude: 43.81549;" 
 				  animation-mixer="loop: repeat"/>
 
-<!-- 		<a-entity gltf-model="#sword2" 
+		<a-entity gltf-model="#sword2" 
 				  position="5 10 5" scale="1 1 1" rotation="0 0 0"
 				  gps-entity-place="longitude: -79.61120; latitude: 43.81549;" 
 				  animation-mixer="loop: repeat"/>
@@ -47,7 +45,7 @@
 		<a-entity gltf-model="#sword4" 
 				  position="5 10 5" scale="3 3 3" rotation="180 90 0"
 				  gps-entity-place="longitude: -79.61120; latitude: 43.81549;" 
-				  animation-mixer="loop: repeat"/> -->
+				  animation-mixer="loop: repeat"/>
 
   		
 		<a-camera gps-camera rotation-reader></a-camera>
